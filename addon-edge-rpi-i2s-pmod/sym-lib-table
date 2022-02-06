@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "gomaDOSzero-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/gomaDOSzero-eagle-import.kicad_sym")(options "")(descr ""))
+)
