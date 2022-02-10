@@ -2478,7 +2478,7 @@
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 5e845d28-b090-4cbe-b836-36c12cd256a2)
   )
-  (text "UART RPi" (at 22.86 140.97 0)
+  (text "UART FPGA / RPi" (at 20.32 140.97 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 67ca54b9-f677-4347-9cc5-a30fe7d78d93)
   )

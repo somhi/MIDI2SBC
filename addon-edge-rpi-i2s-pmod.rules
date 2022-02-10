@@ -1,0 +1,146 @@
+
+(rules PCB addon-edge-rpi-i2s-pmod
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout on)
+    (app.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 7)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.4)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 203.4)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 250.2 (type default_Power))
+    (clear 50.8 (type smd_smd))
+    (clear 250.2 (type smd_Power))
+    (clear 250.2 (type "kicad_default"_Power))
+    (clear 250.2 (type PMOD_Power))
+    (clear 250.2 (type Power_Power))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_900:400_um"
+    (shape
+      (circle F.Cu 900.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 900.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_900:400_um" "Via[0-1]_900:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_900:400_um-kicad_default" "Via[0-1]_900:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-PMOD" "Via[0-1]_800:400_um" PMOD
+  )
+  (via 
+    "Via[0-1]_900:400_um-PMOD" "Via[0-1]_900:400_um" PMOD
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via 
+    "Via[0-1]_900:400_um-Power" "Via[0-1]_900:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    PMOD "Via[0-1]_800:400_um-PMOD"
+  )
+  (via_rule
+    Power "Via[0-1]_900:400_um-Power"
+  )
+  (class default
+    "/B26_WSEL_LRCLK_I2S" "/A27_DIN_I2S" "/B2_BCLK_I2S" "/B1_CE2_UART_RX" "/B16_UART_TX_MIDI" "unconnected-(RPI1-Pad18)" "unconnected-(J4-Pad2)" "/SDA_RPI"
+    "unconnected-(RPI1-Pad22)" "/SCL_RPI" "/PIMIDI_BUT5" "/A2_SPI1_CE1" "unconnected-(RPI1-Pad27)" "unconnected-(RPI1-Pad28)" "unconnected-(RPI1-Pad29)" "unconnected-(RPI1-Pad31)"
+    "unconnected-(RPI1-Pad32)" "unconnected-(RPI1-Pad33)" "unconnected-(RPI1-Pad37)" "unconnected-(EDGE1-PadA4)" "unconnected-(EDGE1-PadA13)" "unconnected-(EDGE1-PadA15)" "unconnected-(EDGE1-PadA16)" "unconnected-(EDGE1-PadA17)"
+    "unconnected-(EDGE1-PadA19)" "unconnected-(EDGE1-PadA26)" "unconnected-(EDGE1-PadB3)" "unconnected-(EDGE1-PadB4)" "unconnected-(EDGE1-PadB6)" "unconnected-(EDGE1-PadB7)" "unconnected-(EDGE1-PadB8)" "unconnected-(EDGE1-PadB9)"
+    "unconnected-(EDGE1-PadB10)" "unconnected-(EDGE1-PadB11)" "unconnected-(EDGE1-PadB12)" "unconnected-(EDGE1-PadB15)" "unconnected-(EDGE1-PadB20)" "unconnected-(EDGE1-PadB21)" "unconnected-(EDGE1-PadB22)" "unconnected-(EDGE1-PadB23)"
+    "unconnected-(EDGE1-PadB25)" "unconnected-(EDGE1-PadB28)" "/B14_SPI1_CE0_CLKBD" "/PIMIDI_BUT2" "/PIMIDI_B3_CLK" "/PIMIDI_B4_DAT" "/A2_CE1" "/B14_CE0_CLKBD"
+    "/A28_MISO_WSBD" "/B1_SPI1_CE2" "/A1_MOSI" "/B13_SCLK_DABD" "/A1_SPI0_MOSI" "/B1_UART_RX" "/A28_SPI0_MISO" "/B13_SPI0_SCLK"
+    "/A2_SPI0_CE1" "/A28_SPI1_MISO_WSBD" "/A1_SPI1_MOSI" "/B13_SPI1_SCLK_DABD" "/B14_SPI0_CE0" "Net-(BUT1-Pad1)" "Net-(BUT2-Pad1)" "unconnected-(J5-Pad6)"
+    "/B24_JOY_SEL" "/DAC_WSEL_LRCLK_I2S" "/DAC_DIN_I2S" "/DAC_BCLK_I2S"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class PMOD
+    "/A8_PMOD1_D4" "/A9_PMOD1_D0" "/A10_PMOD1_D5" "/A11_PMOD1_D1" "/A12_PMOD1_D2" "/A20_PMOD2_D4" "/A21_PMOD2_D0" "/A22_PMOD2_D1"
+    "/A23_PMOD2_D5" "/A24_PMOD2_D2" "/B17_PMOD1_D6" "/B18_PMOD1_D3" "/B19_PMOD1_D7" "/B27_PMOD2_D7" "/A25_PMOD2_D6" "/B16_PMOD_UARTX_MIDI"
+    "/B16_PMOD"
+    (clearance_class PMOD)
+    (via_rule PMOD)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND "Net-(J3-Pad12)" /3V3pi /5Vpi +3V3 /VIN +5V "/JP11_Vout"
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 350.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
