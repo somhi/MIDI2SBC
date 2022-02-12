@@ -118,7 +118,8 @@
         "use_height_for_length_calcs": true
       },
       "track_widths": [
-        0.0
+        0.0,
+        0.25
       ],
       "via_dimensions": [
         {
@@ -389,7 +390,6 @@
           "/A25_PMOD2_D6",
           "/A8_PMOD1_D4",
           "/A9_PMOD1_D0",
-          "/B16_PMOD",
           "/B16_PMOD_UARTX_MIDI",
           "/B17_PMOD1_D6",
           "/B18_PMOD1_D3",
@@ -478,7 +478,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "empty.kicad_wks",
+    "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
@@ -491,5 +491,7 @@
       ""
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "VERSION": "0.4"
+  }
 }
