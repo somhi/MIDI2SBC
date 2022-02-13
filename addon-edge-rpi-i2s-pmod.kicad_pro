@@ -390,6 +390,7 @@
           "/A25_PMOD2_D6",
           "/A8_PMOD1_D4",
           "/A9_PMOD1_D0",
+          "/B16_PMOD2_D3",
           "/B16_PMOD_UARTX_MIDI",
           "/B17_PMOD1_D6",
           "/B18_PMOD1_D3",
@@ -416,12 +417,12 @@
         "nets": [
           "+3V3",
           "+5V",
-          "/3V3pi",
-          "/5Vpi",
           "/JP11_Vout",
-          "/VIN",
+          "3V3pi",
+          "5Vpi",
           "GND",
-          "Net-(J3-Pad12)"
+          "Net-(J3-Pad12)",
+          "VIN"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -492,6 +493,6 @@
     ]
   ],
   "text_variables": {
-    "VERSION": "0.4"
+    "VERSION": "0.41"
   }
 }
