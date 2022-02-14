@@ -96,7 +96,7 @@
     )
   )
 
-  (property "VERSION" "0.41")
+  (property "VERSION" "0.42")
 
   (net 0 "")
   (net 1 "/B26_WSEL_LRCLK_I2S")

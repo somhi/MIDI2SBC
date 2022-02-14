@@ -11,16 +11,22 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
 * MIDI synthesizer: [mt32-pi](https://github.com/dwhinham/mt32-pi) with Oled display, 2 buttons and rotative encoder 
   * Play MIDI sounds from FPGA core through RPi jack output or through I2S DAC
   * Send mt32-pi I2S audio back to FPGA for mixing with other core audio and play it back through I2S DAC
+  
 * DAC I2S: footprints for UDA 1334A or PCM5102A
   * Play I2S audio sent from your FPGA (connected to Edge or Pmod 3)
   * Play I2S audio from Raspberry mt32-Pi (via bypass jumpers)
+  
 * SBC / Micro-controller interface (Multicore)
   * Interface to FPGAs through Edge or Pmod 3 connectors
   * Interface signals: SPI (6 signals) and UART (Rx/Tx) 
   * Footprint for Raspberry Pi model B 40 pin connector. Other SBCs or microcontrollers can be interfaced through adapters (e.g. MAix BiT and STM32 are available in [Atlas FPGA project](https://github.com/atlasfpga))
   * SBC or uC can be used as a multicore device for the FPGA
+  
 * UART header connected to Raspberry Pi and FPGA (Rx, Tx)
+
 * Power header from raspberry Pi (5 V, 3.3 V)
+
+  
 
 **Additional features for Edge connector ** 
 
