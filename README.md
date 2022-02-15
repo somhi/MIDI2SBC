@@ -96,3 +96,12 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
 
 
 ![addon-edge-rpi-i2s-pmod2](addon-edge-rpi-i2s-pmod2.png)
+
+
+
+### Changelog
+
+v0.42  last version with 25 pins
+
+v0.50  Added 10 more pins connected at Edge connector to FPGA. Those pins are shared with other peripherals (2 pins bus I2C shared with RTC and VGA connector, 8 pins shared with SRAM memory)
+
