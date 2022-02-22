@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "gomaDOSzero-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/gomaDOSzero-eagle-import.kicad_sym")(options "")(descr ""))
+  (lib (name "SSD1306-128x64_OLED")(type "KiCad")(uri "${KIPRJMOD}/addon-edge-rpi-i2s-pmod.pretty/SSD1306-128x64_OLED.kicad_sym")(options "")(descr ""))
 )

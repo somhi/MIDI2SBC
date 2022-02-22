@@ -1,20 +1,30 @@
 # MIDI I2S SBC Pmod Edge Interface v0.1
 
-This board is in a prototype status and was born as an addon for [NeptUNO](https://github.com/neptuno-fpga/Main_nepUNO/wiki) FPGA platform (although it can be linked to other FPGAs) for interfacing with a MIDI synthesizer (mt32-pi), DAC I2S, single board computers or microcontrollers, and pmod peripherals.
+**STATUS (222/02/22): Prototype design work in progress. Not manufactured yet.**
 
-This is also my first PCB design attempt. It has been developed with KiCAD 6.0.
+This board was born as an addon for [NeptUNO](https://github.com/neptuno-fpga/Main_nepUNO/wiki) FPGA platform (although it can be linked to other FPGAs) for interfacing with a MIDI synthesizer (mt32-pi), DAC I2S, single board computers (or microcontrollers) and pmod peripherals.
 
-This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Antonio Villena](https://www.antoniovillena.es/store/). I have to thank Antonio for his help letting me know the signals available at the Edge connector of Neptuno.
+This is my first PCB design attempt. 
+
+Project has been developed with KiCAD 6.0.
+
+This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Antonio Villena](https://www.antoniovillena.es/store/). I have to thank Antonio for his help letting me know the signals available at the Edge connector of the [NeptUNO](https://github.com/neptuno-fpga/Main_nepUNO/wiki) FPGA .
+
+### Flow diagram
+
+![flow-diagram](flow-diagram.png)
 
 ### **Features**
 
-* MIDI synthesizer: [mt32-pi](https://github.com/dwhinham/mt32-pi) with Oled display, 2 buttons and rotative encoder 
-  * Play MIDI sounds from FPGA core through RPi jack output or through I2S DAC
+* MIDI synthesizer: [mt32-pi](https://github.com/dwhinham/mt32-pi) 
+  
+  * Includes footprint for and I2C OLED display, rotative encoder and 2 buttons.
+  * Play MIDI sounds from FPGA core through RPi jack output or through an I2S DAC
   * Send mt32-pi I2S audio back to FPGA for mixing with other core audio and play it back through I2S DAC
   
 * DAC I2S: footprints for UDA 1334A or PCM5102A
   * Play I2S audio sent from your FPGA (connected to Edge or Pmod 3)
-  * Play I2S audio from Raspberry mt32-Pi (via bypass jumpers)
+  * Play I2S audio from Raspberry mt32-Pi (via jumpers)
   
 * SBC / Micro-controller interface (Multicore)
   * Interface to FPGAs through Edge or Pmod 3 connectors
@@ -22,7 +32,7 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
   * Footprint for Raspberry Pi model B 40 pin connector. Other SBCs or microcontrollers can be interfaced through adapters (e.g. MAix BiT and STM32 are available in [Atlas FPGA project](https://github.com/atlasfpga))
   * SBC or uC can be used as a multicore device for the FPGA
   
-* UART header connected to Raspberry Pi and FPGA (Rx, Tx)
+* UART header connected to FPGA (Rx, Tx) (and also to Raspberry Pi)
 
 * Power header from raspberry Pi (5 V, 3.3 V)
 
@@ -31,43 +41,42 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
 **Additional features for Edge connector ** 
 
 * Compatible platforms ZXDOS+, GomaDOS+ & NeptUNO
-
-* PMODs 1 & 2 for double Pmod peripherals like Hyperram, VGA, HDMI, .... 
-  * includes 5V power supply pin between Pmods  for broader compatibility
-* PMOD 3 can be used as host (jumper enables power)
-
-
+  * NeptUNO carrier board is compatible with most of QMTech FPGAs
+* PMODs 1 & 2 for double Pmod peripherals (like Hyperram, VGA, HDMI, ....)
+  * Pmod 1 is connected to I2C lines of NeptUNO carrier board
+  * Includes 5V power supply pin between Pmods  for broader compatibility
+* PMODs 3 & 4  
+  * Can be used as host or peripheral pmods (jumper enables output power)
+  * Double Pmod for peripherals only if not using mt32-pi or multicore options
+  * Includes 5V power supply pin between Pmods  for broader compatibility
+  * Pmod 4 cannot be used with NeptUNO board usign SRAM cores
 
 **Additional notes**
 
 * DAC I2S 
   * Only one DAC (either UDA 1334A or PCM5102A) is intended to be used at the same time
-  * DAC voltage input selection jumpers (from Edge, other FPGA or Raspberry Pi)
+  * DAC voltage input selection jumpers (from Edge, Raspberry Pi or other FPGA)
 
 * SPI communication between Raspberry Pi and FPGA
   * SPI 0 or SPI 1 (selection by jumpers)
-  * SPI 1 CE2 signal only available if UART Rx is not used (jumper selection)
+* SPI 1 should be selected when using mt32-pi
 
 
 
 **Jumper Selection**
 
-* DAC I2S Power input  
-
-  * 3 pin jumpers selection: Jumper is either on one side or the other always connecting the central pin
+* DAC I2S Power input source  
 
   * JP11:  RPI / EDGE  
+  * 3 pin jumper is either on one side or the other always connecting the central pin
+    * RPI (5V from Raspberry Pi)
+  * EDGE (5V from e.g. NeptUNO FPGA)
+  
+  * JP12:  JP11 VIN
 
-    * RPI (from Raspberry Pi)
-    * EDGE (from e.g. NeptUNO FPGA)
+    * No jumpter (voltage from any VIN pin (JP12, J4 or J5))
 
-  * JP12:  J4.J5 / JP11
-
-    * J4.J5 (from jumper cable connected either to VIN pin from J4 or J5 connector)
-
-    * JP11 (from selection of JP11 jumper)
-
-      
+    * Jumper shorting JP11 & VIN (5V from selection of JP11 jumper)
 
 * DAC I2S audio source selection
   * 3 pin jumpers selection: Jumper is either on one side or the other always connecting the central pin
@@ -76,18 +85,25 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
   * DAC I2S connected to MIDI synthesizer mt32-pi. 
     * JP21, JP22, JP23   jumper connected to right side
 
-* Multiple function selection for pins
-  * 3 pin jumpers selection: Jumper is either on one side or the other always connecting the central pin
-  * UART RX / SPI1 CE2  (JP31)
-  * UART TX (MIDI OUT) / PMOD2_D3  (JP32)
-  
 * SPI selection between SPI0 and SPI1
 
   * 3 pin jumpers selection: Jumper is either on one side or the other always connecting the central pin
   * SPI0: JP41, JP42, JP43, JP44, JP45  jumper connected to left side
   * SPI1: JP41, JP42, JP43, JP44, JP45  jumper connected to right side
 
-  
+* Power supply selection for pins 1 & 2 of I2C OLED display
+
+  * Some I2C displays have 3V3 on pin 1 and GND on pin 2 whereas in other displays those pins are exchanged
+
+  * JPS1 is a 3 pad solder jumper
+
+    * Solder central pad to either 3V3 or GND for selecting function of PS1 display pin
+
+  * JPS2 is a 3 pad solder jumper
+
+    * Solder central pad to either 3V3 or GND for selecting function of PS2 display pin
+
+      
 
 ### 3D model
 
