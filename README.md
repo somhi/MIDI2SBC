@@ -57,7 +57,17 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
   * Includes 5V power supply pin between Pmods  for broader compatibility
   * Pmod 4 cannot be used with NeptUNO board usign SRAM cores
 
-**Additional notes**
+### 3D model
+
+![addon-edge-rpi-i2s-pmod1](addon-edge-rpi-i2s-pmod1.png)
+
+
+
+![addon-edge-rpi-i2s-pmod2](addon-edge-rpi-i2s-pmod2.png)
+
+
+
+### **Additional notes**
 
 * DAC I2S 
   * Only one DAC (either UDA 1334A or PCM5102A) is intended to be used at the same time
@@ -69,20 +79,20 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
 
 
 
-**Jumper Selection**
+### **Jumper Selection**
 
 * DAC I2S Power input source  
 
   * JP11:  RPI / EDGE  
   * 3 pin jumper is either on one side or the other always connecting the central pin
     * RPI (5V from Raspberry Pi)
-  * EDGE (5V from e.g. NeptUNO FPGA)
-  
+    * EDGE (5V from e.g. NeptUNO FPGA)
+    
   * JP12:  JP11 VIN
 
     * No jumpter (voltage from any VIN pin (JP12, J4 or J5))
-
-    * Jumper shorting JP11 & VIN (5V from selection of JP11 jumper)
+* Jumper shorting JP11 & VIN (5V from selection of JP11 jumper)
+  * JP11 set to RPI and JP12 with jumper for mt32pi synthesizer functionality
 
 * DAC I2S audio source selection
   * 3 pin jumpers selection: Jumper is either on one side or the other always connecting the central pin
@@ -95,7 +105,8 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
 
   * 3 pin jumpers selection: Jumper is either on one side or the other always connecting the central pin
   * SPI0: JP41, JP42, JP43, JP44, JP45  jumper connected to left side
-  * SPI1: JP41, JP42, JP43, JP44, JP45  jumper connected to right side
+  * SPI1: JP41, JP42, JP43, JP44, JP45  jumper connected to right side.  
+  * Set to SPI1 for mt32pi synthesizer functionality
 
 * Power supply selection for pins 1 & 2 of I2C OLED display
 
@@ -111,19 +122,11 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon from [Anton
 
       
 
-### 3D model
-
-![addon-edge-rpi-i2s-pmod1](addon-edge-rpi-i2s-pmod1.png)
-
-
-
-![addon-edge-rpi-i2s-pmod2](addon-edge-rpi-i2s-pmod2.png)
-
-
-
 ### Changelog
 
 v0.42  last version with 25 pins
 
-v0.50  Added 10 more pins connected at Edge connector to FPGA. Those pins are shared with other peripherals (2 pins bus I2C shared with RTC and VGA connector, 8 pins shared with SRAM memory)
+v0.50  added 10 more pins connected at Edge connector to FPGA. Those pins are shared with other peripherals (2 pins bus I2C shared with RTC and VGA connector, 8 pins shared with SRAM memory)
+
+v0.60  routed and gerber done
 
