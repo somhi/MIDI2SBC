@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "6.0.0-d3dd2cf0fa~116~ubuntu20.04.1"
     },
-    "CreationDate": "2022-02-13T01:33:05+01:00"
+    "CreationDate": "2022-02-25T21:38:06+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -15,7 +15,7 @@
     },
     "Size": {
       "X": 100.05,
-      "Y": 72.05
+      "Y": 100.049
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -34,47 +34,47 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "addon-edge-rpi-i2s-pmod-F_Cu.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-F_Cu.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "addon-edge-rpi-i2s-pmod-B_Cu.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-B_Cu.gbl",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "addon-edge-rpi-i2s-pmod-F_Paste.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-F_Paste.gtp",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "addon-edge-rpi-i2s-pmod-B_Paste.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-B_Paste.gbp",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "addon-edge-rpi-i2s-pmod-F_Silkscreen.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-F_Silkscreen.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "addon-edge-rpi-i2s-pmod-B_Silkscreen.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-B_Silkscreen.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "addon-edge-rpi-i2s-pmod-F_Mask.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-F_Mask.gts",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "addon-edge-rpi-i2s-pmod-B_Mask.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-B_Mask.gbs",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "addon-edge-rpi-i2s-pmod-Edge_Cuts.gbr",
+      "Path": "addon-edge-rpi-i2s-pmod-Edge_Cuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }
