@@ -1,6 +1,6 @@
 # MIDI I2S SBC Pmod Edge Interface
 
-**STATUS (26/02/22): Prototype design finished. Any issues you find are welcome. Not manufactured yet.**
+**STATUS (01/03/22): sent to manufacturing at JLCPCB**
 
 This board was born as an addon for [NeptUNO](https://github.com/neptuno-fpga/Main_nepUNO/wiki) FPGA platform (although it can be linked to other FPGAs) for interfacing with a MIDI synthesizer (mt32-pi), DAC I2S, single board computers (or microcontrollers) and pmod peripherals.
 
@@ -130,3 +130,4 @@ v0.50  added 10 more pins connected at Edge connector to FPGA. Those pins are sh
 
 v0.60  routed and gerber done
 
+v0.70 minor changes. Prototype version sent to manufacturing
