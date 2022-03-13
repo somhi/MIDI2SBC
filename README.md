@@ -131,3 +131,5 @@ v0.50  added 10 more pins connected at Edge connector to FPGA. Those pins are sh
 v0.60  routed and gerber done
 
 v0.70 minor changes. Prototype version sent to manufacturing
+
+v0.71 minor disalignment of Pmod 1 with Pmod 2
