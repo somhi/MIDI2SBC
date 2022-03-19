@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/jordi/Kicad/a_Neptuno/MIDI_I2S_SBC_Pmod_Edge_Interface_GITHUB/addon-edge-rpi-i2s-pmod.kicad_sch</source>
+    <date>Wed 16 Mar 2022 23:13:06 CET</date>
+    <tool>Eeschema 6.0.0-d3dd2cf0fa~116~ubuntu20.04.1</tool>
+    <textvar name="VERSION">0.71</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>MIDI I2S SBC Pmod Edge Interface</title>
+        <company>Hard Team Deca</company>
+        <rev>0.71</rev>
+        <date>2022-02-12</date>
+        <source>addon-edge-rpi-i2s-pmod.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value="2022 Somhic &lt;@somhic at telegram&gt;"/>
+        <comment number="3" value="License: CC-BY-SA v4.0"/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BUT1">
+      <value>SW_DIP_x01</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm_H5mm</footprint>
+      <libsource lib="Switch" part="SW_DIP_x01" description="1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1efbf9c3-2dba-453a-aff4-a160475a6849</tstamps>
+    </comp>
+    <comp ref="BUT2">
+      <value>SW_DIP_x01</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm_H5mm</footprint>
+      <libsource lib="Switch" part="SW_DIP_x01" description="1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c19e7da1-53c1-4cd1-b5e6-f1aba295b77f</tstamps>
+    </comp>
+    <comp ref="EDGE1">
+      <value>ZXSP_ED2X28_SPE_SOL_EDGE</value>
+      <footprint>gomaDOSzero:2X28_SPE2</footprint>
+      <libsource lib="gomaDOSzero-eagle-import" part="ZXSP_ED2X28_SPE_SOL_EDGE" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>19df0889-8c5e-415e-abe2-efd1adc29b07</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9a025d13-3f10-4480-b02b-5650c6d28ed8</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>31661ca5-99ab-4943-9e3f-fa1577f65694</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ba339fd-3eed-4093-adef-1f8b6939e3c2</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c083c486-b973-42d0-b821-adaa33b07eda</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>PMOD1</value>
+      <footprint>gomaDOSzero:Pmod_2x06_P2.54mm_Vertical_2</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x06_Top_Bottom" description="Generic connector, double row, 02x06, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c1b268d-15a9-42d8-ab97-faf2237998c3</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>PMOD2</value>
+      <footprint>gomaDOSzero:Pmod_2x06_P2.54mm_Vertical_2</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x06_Top_Bottom" description="Generic connector, double row, 02x06, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>16a60526-f496-457a-86e5-9ecf627b3ddc</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>PMOD3</value>
+      <footprint>gomaDOSzero:PMOD_Female_Horizontal_2</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x06_Top_Bottom" description="Generic connector, double row, 02x06, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3e4369ed-61b9-4b9e-92f5-8943e3df62d1</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>PMOD4</value>
+      <footprint>gomaDOSzero:PMOD_Female_Horizontal_2</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x06_Top_Bottom" description="Generic connector, double row, 02x06, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>974dc5f0-3500-4950-b40e-1dcd627496a2</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x06</value>
+      <footprint>gomaDOSzero:UDA1334</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c613c370-cd71-407d-b1be-966e5dc54ca7</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x06</value>
+      <footprint>gomaDOSzero:PCM5102</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf4939e9-8ae0-4af4-8ec6-e88cfbcbfe6e</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90b5095a-d8b5-4d2d-8e38-c516e7e416eb</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x04</value>
+      <footprint>gomaDOSzero:I2C_DISPLAY_MULTI2</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08b39350-6cc0-4d1d-8f29-e876f40d8aff</tstamps>
+    </comp>
+    <comp ref="J9">
+      <value>Conn_01x05</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x05" description="Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>372abc30-88f4-4a5e-be5f-478f5fcd7ac0</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73e2a101-0bc0-414b-9aa7-7eeb8a3caef1</tstamps>
+    </comp>
+    <comp ref="J12">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x01_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d18540cc-7c2f-43ec-944a-ac415cbaf3fd</tstamps>
+    </comp>
+    <comp ref="J13">
+      <value>Conn_01x01</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca18f0d2-3cc0-4053-b17c-405703d06f23</tstamps>
+    </comp>
+    <comp ref="JP5">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44d2b700-098f-40c3-858b-4ad13503f5ba</tstamps>
+    </comp>
+    <comp ref="JP11">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70a0e5bd-25b7-4cf5-87bd-ceeca6ab7e56</tstamps>
+    </comp>
+    <comp ref="JP12">
+      <value>Conn_01x02</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c48e759e-27c0-42bb-8738-79d67fb26471</tstamps>
+    </comp>
+    <comp ref="JP21">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83eb0e9a-5756-4475-9118-012ddeff1845</tstamps>
+    </comp>
+    <comp ref="JP22">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8303da2-737e-49c0-bf64-38ea89f8f73f</tstamps>
+    </comp>
+    <comp ref="JP23">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f528a9a-09bd-4eaa-9947-3f730f114fd1</tstamps>
+    </comp>
+    <comp ref="JP41">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>91d4baa6-de13-4b15-a05c-349d000f9daa</tstamps>
+    </comp>
+    <comp ref="JP42">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3ef9cbf-9a9b-4632-94e3-27df4fef0357</tstamps>
+    </comp>
+    <comp ref="JP43">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>515cb234-4bf9-427d-998c-1a20bf00d07f</tstamps>
+    </comp>
+    <comp ref="JP44">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>717e568d-31d0-459b-9a03-94b57577fa14</tstamps>
+    </comp>
+    <comp ref="JP45">
+      <value>Conn_01x03</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b1816f0d-055c-4452-8d35-df258a41189c</tstamps>
+    </comp>
+    <comp ref="JPS1">
+      <value>SolderJumper_3_Open</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels</footprint>
+      <libsource lib="Jumper" part="SolderJumper_3_Open" description="Solder Jumper, 3-pole, open"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3a7372df-1a16-441a-ab1c-f73cc7118a91</tstamps>
+    </comp>
+    <comp ref="JPS2">
+      <value>SolderJumper_3_Open</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels</footprint>
+      <libsource lib="Jumper" part="SolderJumper_3_Open" description="Solder Jumper, 3-pole, open"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a73121e1-4f1e-47c3-9d16-bbf248d7d1a6</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba8024d5-8c9d-4001-9766-31acf13004f5</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ea6ccf7c-821b-47a5-83af-2320a7de6ed7</tstamps>
+    </comp>
+    <comp ref="RPI1">
+      <value>RASPBERRYPI_BPLUS_BONNETNODIM</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical</footprint>
+      <libsource lib="gomaDOSzero-eagle-import" part="RASPBERRYPI_BPLUS_BONNETNODIM" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="addon-edge-rpi-i2s-pmod.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5961230-8e5e-4030-adc9-ec796956cd9e</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x05">
+      <description>Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x06_Top_Bottom">
+      <description>Generic connector, double row, 02x06, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x06_Top_Bottom</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_3_Open">
+      <description>Solder Jumper, 3-pole, open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Open*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_3_Open</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="C" type="input"/>
+        <pin num="3" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Switch" part="SW_DIP_x01">
+      <description>1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SW?DIP?x1*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DIP_x01</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="gomaDOSzero-eagle-import" part="RASPBERRYPI_BPLUS_BONNETNODIM">
+      <fields>
+        <field name="Reference">RPI1</field>
+        <field name="Value">RASPBERRYPI_BPLUS_BONNETNODIM</field>
+        <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3.3V" type="power_out"/>
+        <pin num="2" name="5.0V" type="power_out"/>
+        <pin num="3" name="SDA" type="bidirectional"/>
+        <pin num="4" name="5.0V@1" type="power_in"/>
+        <pin num="5" name="SCL" type="bidirectional"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GPIO4" type="bidirectional"/>
+        <pin num="8" name="TXD" type="bidirectional"/>
+        <pin num="9" name="GND@4" type="power_in"/>
+        <pin num="10" name="RXD" type="bidirectional"/>
+        <pin num="11" name="GPIO17" type="bidirectional"/>
+        <pin num="12" name="GPIO18" type="bidirectional"/>
+        <pin num="13" name="GPIO27" type="bidirectional"/>
+        <pin num="14" name="GND@1" type="power_in"/>
+        <pin num="15" name="GPIO22" type="bidirectional"/>
+        <pin num="16" name="GPIO23" type="bidirectional"/>
+        <pin num="17" name="3.3V@1" type="power_in"/>
+        <pin num="18" name="GPIO24" type="bidirectional"/>
+        <pin num="19" name="SPI_MOSI" type="bidirectional"/>
+        <pin num="20" name="GND@2" type="power_in"/>
+        <pin num="21" name="SPI_MISO" type="bidirectional"/>
+        <pin num="22" name="GPIO25" type="bidirectional"/>
+        <pin num="23" name="SPI_SCLK" type="bidirectional"/>
+        <pin num="24" name="#SPI_CE0" type="bidirectional"/>
+        <pin num="25" name="GND@3" type="power_in"/>
+        <pin num="26" name="#SPI_CE1" type="bidirectional"/>
+        <pin num="27" name="EEDATA" type="bidirectional"/>
+        <pin num="28" name="EECLK" type="bidirectional"/>
+        <pin num="29" name="GPIO5" type="bidirectional"/>
+        <pin num="30" name="GND@6" type="power_in"/>
+        <pin num="31" name="GPIO6" type="bidirectional"/>
+        <pin num="32" name="GPIO12" type="bidirectional"/>
+        <pin num="33" name="GPIO13" type="bidirectional"/>
+        <pin num="34" name="GND@7" type="power_in"/>
+        <pin num="35" name="GPIO19" type="bidirectional"/>
+        <pin num="36" name="GPIO16" type="bidirectional"/>
+        <pin num="37" name="GPIO26" type="bidirectional"/>
+        <pin num="38" name="GPIO20" type="bidirectional"/>
+        <pin num="39" name="GND@5" type="power_in"/>
+        <pin num="40" name="GPIO21" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="gomaDOSzero-eagle-import" part="ZXSP_ED2X28_SPE_SOL_EDGE">
+      <fields>
+        <field name="Reference">U$1</field>
+        <field name="Value">ZXSP_ED2X28_SPE_SOL_EDGE</field>
+        <field name="Footprint">gomaDOSzero:2X28_SPE2</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="A14" type="bidirectional"/>
+        <pin num="A2" name="A12" type="bidirectional"/>
+        <pin num="A3" name="5V" type="power_out"/>
+        <pin num="A4" name="9V" type="power_in"/>
+        <pin num="A6" name="GND_1" type="power_out"/>
+        <pin num="A7" name="GND_2" type="power_in"/>
+        <pin num="A8" name="CK" type="bidirectional"/>
+        <pin num="A9" name="A0" type="bidirectional"/>
+        <pin num="A10" name="A1" type="bidirectional"/>
+        <pin num="A11" name="A2" type="bidirectional"/>
+        <pin num="A12" name="A3" type="bidirectional"/>
+        <pin num="A13" name="/IORQ_ULA" type="bidirectional"/>
+        <pin num="A14" name="GND_3" type="power_in"/>
+        <pin num="A15" name="VIDEO" type="bidirectional"/>
+        <pin num="A16" name="/Y" type="bidirectional"/>
+        <pin num="A17" name="V" type="bidirectional"/>
+        <pin num="A18" name="U" type="power_out"/>
+        <pin num="A19" name="/BUSRQ" type="bidirectional"/>
+        <pin num="A20" name="/RESET" type="bidirectional"/>
+        <pin num="A21" name="A7" type="bidirectional"/>
+        <pin num="A22" name="A6" type="bidirectional"/>
+        <pin num="A23" name="A5" type="bidirectional"/>
+        <pin num="A24" name="A4" type="bidirectional"/>
+        <pin num="A25" name="/ROMCS" type="bidirectional"/>
+        <pin num="A26" name="/BUSACK" type="bidirectional"/>
+        <pin num="A27" name="A9" type="bidirectional"/>
+        <pin num="A28" name="A11" type="bidirectional"/>
+        <pin num="B1" name="A15" type="bidirectional"/>
+        <pin num="B2" name="A13" type="bidirectional"/>
+        <pin num="B3" name="D7" type="bidirectional"/>
+        <pin num="B4" name="NC" type="no_connect"/>
+        <pin num="B6" name="D0" type="bidirectional"/>
+        <pin num="B7" name="D1" type="bidirectional"/>
+        <pin num="B8" name="D2" type="bidirectional"/>
+        <pin num="B9" name="D6" type="bidirectional"/>
+        <pin num="B10" name="D5" type="bidirectional"/>
+        <pin num="B11" name="D3" type="bidirectional"/>
+        <pin num="B12" name="D4" type="bidirectional"/>
+        <pin num="B13" name="/INT" type="bidirectional"/>
+        <pin num="B14" name="/NMI" type="bidirectional"/>
+        <pin num="B15" name="/HALT" type="bidirectional"/>
+        <pin num="B16" name="/MREQ" type="bidirectional"/>
+        <pin num="B17" name="/IORQ" type="bidirectional"/>
+        <pin num="B18" name="/RD" type="bidirectional"/>
+        <pin num="B19" name="/WR" type="bidirectional"/>
+        <pin num="B20" name="-5V" type="power_in"/>
+        <pin num="B21" name="/WAIT" type="bidirectional"/>
+        <pin num="B22" name="+12V" type="power_in"/>
+        <pin num="B23" name="-12V" type="power_in"/>
+        <pin num="B24" name="/M1" type="bidirectional"/>
+        <pin num="B25" name="/RFSH" type="bidirectional"/>
+        <pin num="B26" name="A8" type="bidirectional"/>
+        <pin num="B27" name="A10" type="bidirectional"/>
+        <pin num="B28" name="NC2" type="no_connect"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/usr/share/kicad/symbols//Jumper.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/usr/share/kicad/symbols//Switch.kicad_sym</uri>
+    </library>
+    <library logical="gomaDOSzero-eagle-import">
+      <uri>/home/jordi/Kicad/a_Neptuno/MIDI_I2S_SBC_Pmod_Edge_Interface_GITHUB/gomaDOSzero-eagle-import.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="EDGE1" pin="A18" pinfunction="U" pintype="power_out"/>
+      <node ref="J1" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J2" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="JP5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="EDGE1" pin="A3" pinfunction="5V" pintype="power_out"/>
+      <node ref="J10" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J12" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="JP11" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="3" name="/A1_MOSI">
+      <node ref="EDGE1" pin="A1" pinfunction="A14" pintype="bidirectional"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JP41" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="4" name="/A1_SPI0_MOSI">
+      <node ref="JP41" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="RPI1" pin="19" pinfunction="SPI_MOSI" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/A1_SPI1_MOSI">
+      <node ref="JP41" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RPI1" pin="38" pinfunction="GPIO20" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/A2_CE1">
+      <node ref="EDGE1" pin="A2" pinfunction="A12" pintype="bidirectional"/>
+      <node ref="J3" pin="9" pinfunction="Pin_9" pintype="passive"/>
+      <node ref="JP45" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="7" name="/A2_SPI0_CE1">
+      <node ref="JP45" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="RPI1" pin="26" pinfunction="#SPI_CE1" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/A2_SPI1_CE1">
+      <node ref="BUT1" pin="2" pintype="passive"/>
+      <node ref="JP45" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RPI1" pin="11" pinfunction="GPIO17" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/A8_PMOD1_D4">
+      <node ref="EDGE1" pin="A8" pinfunction="CK" pintype="bidirectional"/>
+      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+    </net>
+    <net code="10" name="/A9_PMOD1_D0">
+      <node ref="EDGE1" pin="A9" pinfunction="A0" pintype="bidirectional"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="11" name="/A10_PMOD1_D5">
+      <node ref="EDGE1" pin="A10" pinfunction="A1" pintype="bidirectional"/>
+      <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
+    </net>
+    <net code="12" name="/A11_PMOD1_D1">
+      <node ref="EDGE1" pin="A11" pinfunction="A2" pintype="bidirectional"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="13" name="/A12_PMOD1_D6">
+      <node ref="EDGE1" pin="A12" pinfunction="A3" pintype="bidirectional"/>
+      <node ref="J1" pin="9" pinfunction="Pin_9" pintype="passive"/>
+    </net>
+    <net code="14" name="/A20_PMOD2_D5">
+      <node ref="EDGE1" pin="A20" pinfunction="/RESET" pintype="bidirectional"/>
+      <node ref="J2" pin="8" pinfunction="Pin_8" pintype="passive"/>
+    </net>
+    <net code="15" name="/A21_PMOD2_D1">
+      <node ref="EDGE1" pin="A21" pinfunction="A7" pintype="bidirectional"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="16" name="/A22_PMOD2_D6">
+      <node ref="EDGE1" pin="A22" pinfunction="A6" pintype="bidirectional"/>
+      <node ref="J2" pin="9" pinfunction="Pin_9" pintype="passive"/>
+    </net>
+    <net code="17" name="/A23_PMOD2_D2">
+      <node ref="EDGE1" pin="A23" pinfunction="A5" pintype="bidirectional"/>
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="18" name="/A24_PMOD2_D7">
+      <node ref="EDGE1" pin="A24" pinfunction="A4" pintype="bidirectional"/>
+      <node ref="J2" pin="10" pinfunction="Pin_10" pintype="passive"/>
+    </net>
+    <net code="19" name="/A25_PMOD2_D3">
+      <node ref="EDGE1" pin="A25" pinfunction="/ROMCS" pintype="bidirectional"/>
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    </net>
+    <net code="20" name="/A27_DIN_I2S">
+      <node ref="EDGE1" pin="A27" pinfunction="A9" pintype="bidirectional"/>
+      <node ref="JP22" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="21" name="/A28_MISO_WSBD">
+      <node ref="EDGE1" pin="A28" pinfunction="A11" pintype="bidirectional"/>
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="JP42" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="22" name="/A28_SPI0_MISO">
+      <node ref="JP42" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="RPI1" pin="21" pinfunction="SPI_MISO" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/A28_SPI1_MISO_WSBD">
+      <node ref="JP23" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="JP42" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RPI1" pin="35" pinfunction="GPIO19" pintype="bidirectional"/>
+    </net>
+    <net code="24" name="/B1_UART_RX">
+      <node ref="EDGE1" pin="B1" pinfunction="A15" pintype="bidirectional"/>
+      <node ref="J3" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="RPI1" pin="8" pinfunction="TXD" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/B2_BCLK_I2S">
+      <node ref="EDGE1" pin="B2" pinfunction="A13" pintype="bidirectional"/>
+      <node ref="JP21" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="26" name="/B3_SRAMDQ15">
+      <node ref="EDGE1" pin="B3" pinfunction="D7" pintype="bidirectional"/>
+      <node ref="J4" pin="10" pinfunction="Pin_10" pintype="passive"/>
+    </net>
+    <net code="27" name="/B6_SRAMDQ8">
+      <node ref="EDGE1" pin="B6" pinfunction="D0" pintype="bidirectional"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="28" name="/B7_SRAMDQ9">
+      <node ref="EDGE1" pin="B7" pinfunction="D1" pintype="bidirectional"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="29" name="/B8_SRAMDQ10">
+      <node ref="EDGE1" pin="B8" pinfunction="D2" pintype="bidirectional"/>
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="30" name="/B9_SRAMDQ14">
+      <node ref="EDGE1" pin="B9" pinfunction="D6" pintype="bidirectional"/>
+      <node ref="J4" pin="9" pinfunction="Pin_9" pintype="passive"/>
+    </net>
+    <net code="31" name="/B10_SRAMDQ13">
+      <node ref="EDGE1" pin="B10" pinfunction="D5" pintype="bidirectional"/>
+      <node ref="J4" pin="8" pinfunction="Pin_8" pintype="passive"/>
+    </net>
+    <net code="32" name="/B11_SRAMDQ11">
+      <node ref="EDGE1" pin="B11" pinfunction="D3" pintype="bidirectional"/>
+      <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    </net>
+    <net code="33" name="/B12_SRAMDQ12">
+      <node ref="EDGE1" pin="B12" pinfunction="D4" pintype="bidirectional"/>
+      <node ref="J4" pin="7" pinfunction="Pin_7" pintype="passive"/>
+    </net>
+    <net code="34" name="/B13_SCLK_DABD">
+      <node ref="EDGE1" pin="B13" pinfunction="/INT" pintype="bidirectional"/>
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="JP43" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="35" name="/B13_SPI0_SCLK">
+      <node ref="JP43" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="RPI1" pin="23" pinfunction="SPI_SCLK" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/B13_SPI1_SCLK_DABD">
+      <node ref="JP22" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="JP43" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RPI1" pin="40" pinfunction="GPIO21" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="/B14_CE0_CLKBD">
+      <node ref="EDGE1" pin="B14" pinfunction="/NMI" pintype="bidirectional"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="JP44" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="38" name="/B14_SPI0_CE0">
+      <node ref="JP44" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="RPI1" pin="24" pinfunction="#SPI_CE0" pintype="bidirectional"/>
+    </net>
+    <net code="39" name="/B14_SPI1_CE0_CLKBD">
+      <node ref="JP21" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="JP44" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RPI1" pin="12" pinfunction="GPIO18" pintype="bidirectional"/>
+    </net>
+    <net code="40" name="/B15_SCL_PM1_D2">
+      <node ref="EDGE1" pin="B15" pinfunction="/HALT" pintype="bidirectional"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="41" name="/B16_UART_TX_MIDI">
+      <node ref="EDGE1" pin="B16" pinfunction="/MREQ" pintype="bidirectional"/>
+      <node ref="J3" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="J7" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RPI1" pin="10" pinfunction="RXD" pintype="bidirectional"/>
+    </net>
+    <net code="42" name="/B17_PMOD1_D7">
+      <node ref="EDGE1" pin="B17" pinfunction="/IORQ" pintype="bidirectional"/>
+      <node ref="J1" pin="10" pinfunction="Pin_10" pintype="passive"/>
+    </net>
+    <net code="43" name="/B18_PMOD2_D4">
+      <node ref="EDGE1" pin="B18" pinfunction="/RD" pintype="bidirectional"/>
+      <node ref="J2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+    </net>
+    <net code="44" name="/B19_PMOD2_D0">
+      <node ref="EDGE1" pin="B19" pinfunction="/WR" pintype="bidirectional"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="45" name="/B21_SDA_PM1_D3">
+      <node ref="EDGE1" pin="B21" pinfunction="/WAIT" pintype="bidirectional"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+    </net>
+    <net code="46" name="/B24_JOY_SEL">
+      <node ref="EDGE1" pin="B24" pinfunction="/M1" pintype="bidirectional"/>
+      <node ref="J13" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="47" name="/B26_WSEL_LRCLK_I2S">
+      <node ref="EDGE1" pin="B26" pinfunction="A8" pintype="bidirectional"/>
+      <node ref="JP23" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="48" name="/B27_SPI1CE2">
+      <node ref="EDGE1" pin="B27" pinfunction="A10" pintype="bidirectional"/>
+      <node ref="J3" pin="10" pinfunction="Pin_10" pintype="passive"/>
+      <node ref="RPI1" pin="36" pinfunction="GPIO16" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="/DAC_BCLK_I2S">
+      <node ref="J5" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J6" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="JP21" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="50" name="/DAC_DIN_I2S">
+      <node ref="J5" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J6" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="JP22" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="51" name="/DAC_WSEL_LRCLK_I2S">
+      <node ref="J5" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="JP23" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="52" name="/DISPLAY_PS1">
+      <node ref="J8" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="JPS1" pin="2" pinfunction="C" pintype="input"/>
+    </net>
+    <net code="53" name="/DISPLAY_PS2">
+      <node ref="J8" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JPS2" pin="2" pinfunction="C" pintype="input"/>
+    </net>
+    <net code="54" name="/JP11_Vout">
+      <node ref="JP11" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="JP12" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="55" name="/PIMIDI_B3_CLK">
+      <node ref="J9" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="RPI1" pin="15" pinfunction="GPIO22" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="/PIMIDI_B4_DAT">
+      <node ref="J9" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="RPI1" pin="16" pinfunction="GPIO23" pintype="bidirectional"/>
+    </net>
+    <net code="57" name="/PIMIDI_BUT2">
+      <node ref="BUT2" pin="2" pintype="passive"/>
+      <node ref="RPI1" pin="13" pinfunction="GPIO27" pintype="bidirectional"/>
+    </net>
+    <net code="58" name="/PIMIDI_BUT5">
+      <node ref="J9" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RPI1" pin="7" pinfunction="GPIO4" pintype="bidirectional"/>
+    </net>
+    <net code="59" name="/SCL_RPI">
+      <node ref="J8" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="RPI1" pin="5" pinfunction="SCL" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="/SDA_RPI">
+      <node ref="J8" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="RPI1" pin="3" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="61" name="/VH_PMOD">
+      <node ref="J3" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="J3" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="J4" pin="12" pinfunction="Pin_12" pintype="passive"/>
+      <node ref="J4" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="JP5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="62" name="3V3pi">
+      <node ref="J9" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="JPS1" pin="3" pinfunction="B" pintype="passive"/>
+      <node ref="JPS2" pin="3" pinfunction="B" pintype="passive"/>
+      <node ref="RPI1" pin="1" pinfunction="3.3V" pintype="power_out"/>
+      <node ref="RPI1" pin="17" pinfunction="3.3V@1" pintype="power_in"/>
+    </net>
+    <net code="63" name="5Vpi">
+      <node ref="JP11" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="RPI1" pin="2" pinfunction="5.0V" pintype="power_out"/>
+      <node ref="RPI1" pin="4" pinfunction="5.0V@1" pintype="power_in"/>
+    </net>
+    <net code="64" name="GND">
+      <node ref="EDGE1" pin="A14" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="EDGE1" pin="A6" pinfunction="GND_1" pintype="power_out"/>
+      <node ref="EDGE1" pin="A7" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="J1" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J10" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J12" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J3" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J4" pin="11" pinfunction="Pin_11" pintype="passive"/>
+      <node ref="J4" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J9" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="JPS1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="JPS2" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="RPI1" pin="14" pinfunction="GND@1" pintype="power_in"/>
+      <node ref="RPI1" pin="20" pinfunction="GND@2" pintype="power_in"/>
+      <node ref="RPI1" pin="25" pinfunction="GND@3" pintype="power_in"/>
+      <node ref="RPI1" pin="30" pinfunction="GND@6" pintype="power_in"/>
+      <node ref="RPI1" pin="34" pinfunction="GND@7" pintype="power_in"/>
+      <node ref="RPI1" pin="39" pinfunction="GND@5" pintype="power_in"/>
+      <node ref="RPI1" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="RPI1" pin="9" pinfunction="GND@4" pintype="power_in"/>
+    </net>
+    <net code="65" name="Net-(BUT1-Pad1)">
+      <node ref="BUT1" pin="1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="66" name="Net-(BUT2-Pad1)">
+      <node ref="BUT2" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="67" name="VIN">
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="JP12" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="68" name="unconnected-(EDGE1-PadA4)">
+      <node ref="EDGE1" pin="A4" pinfunction="9V" pintype="power_in+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(EDGE1-PadA13)">
+      <node ref="EDGE1" pin="A13" pinfunction="/IORQ_ULA" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(EDGE1-PadA15)">
+      <node ref="EDGE1" pin="A15" pinfunction="VIDEO" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(EDGE1-PadA16)">
+      <node ref="EDGE1" pin="A16" pinfunction="/Y" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(EDGE1-PadA17)">
+      <node ref="EDGE1" pin="A17" pinfunction="V" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(EDGE1-PadA19)">
+      <node ref="EDGE1" pin="A19" pinfunction="/BUSRQ" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(EDGE1-PadA26)">
+      <node ref="EDGE1" pin="A26" pinfunction="/BUSACK" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(EDGE1-PadB4)">
+      <node ref="EDGE1" pin="B4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(EDGE1-PadB20)">
+      <node ref="EDGE1" pin="B20" pinfunction="-5V" pintype="power_in+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(EDGE1-PadB22)">
+      <node ref="EDGE1" pin="B22" pinfunction="+12V" pintype="power_in+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(EDGE1-PadB23)">
+      <node ref="EDGE1" pin="B23" pinfunction="-12V" pintype="power_in+no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(EDGE1-PadB25)">
+      <node ref="EDGE1" pin="B25" pinfunction="/RFSH" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(EDGE1-PadB28)">
+      <node ref="EDGE1" pin="B28" pinfunction="NC2" pintype="no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(J5-Pad2)">
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(J6-Pad6)">
+      <node ref="J6" pin="6" pinfunction="Pin_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="83" name="unconnected-(RPI1-Pad18)">
+      <node ref="RPI1" pin="18" pinfunction="GPIO24" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(RPI1-Pad22)">
+      <node ref="RPI1" pin="22" pinfunction="GPIO25" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(RPI1-Pad27)">
+      <node ref="RPI1" pin="27" pinfunction="EEDATA" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(RPI1-Pad28)">
+      <node ref="RPI1" pin="28" pinfunction="EECLK" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(RPI1-Pad29)">
+      <node ref="RPI1" pin="29" pinfunction="GPIO5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(RPI1-Pad31)">
+      <node ref="RPI1" pin="31" pinfunction="GPIO6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(RPI1-Pad32)">
+      <node ref="RPI1" pin="32" pinfunction="GPIO12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(RPI1-Pad33)">
+      <node ref="RPI1" pin="33" pinfunction="GPIO13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(RPI1-Pad37)">
+      <node ref="RPI1" pin="37" pinfunction="GPIO26" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>
