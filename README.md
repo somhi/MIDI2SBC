@@ -146,7 +146,8 @@ v0.72 silkscreen updated (midi and mt32pi settings)
 
 
 
-**Todo**
+**Todo / Improvements**
 
-* Support of UDA113 in the opposite header
+* Stability of i2S DACs and display is not very good
+* Round corners of outline
 
