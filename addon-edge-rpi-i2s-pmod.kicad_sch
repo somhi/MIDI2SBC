@@ -2572,7 +2572,7 @@
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 24c15d01-09b5-4670-b959-8af6e6af1e8b)
   )
-  (text "PMOD 4 (SRAM)" (at 80.01 158.75 0)
+  (text "PMOD 3" (at 88.265 158.115 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 2eabefb1-a485-4f8d-a57b-22102eead219)
   )
@@ -2596,7 +2596,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 488f05c2-7acd-4af4-aa90-1c1495a576e0)
   )
-  (text "PMOD 3 (SPI+UART)" (at 79.375 117.475 0)
+  (text "PMOD 4 (SPI+UART)" (at 74.295 118.11 0)
     (effects (font (size 2.54 2.54)) (justify left bottom))
     (uuid 534c3619-79be-4ca4-a51b-b249f969d533)
   )
@@ -3699,8 +3699,8 @@
   (symbol (lib_id "Connector_Generic:Conn_02x06_Top_Bottom") (at 93.345 131.445 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3e4369ed-61b9-4b9e-92f5-8943e3df62d1)
-    (property "Reference" "J3" (id 0) (at 94.615 120.8532 0))
-    (property "Value" "PMOD3" (id 1) (at 94.615 123.1646 0))
+    (property "Reference" "J4" (id 0) (at 94.615 120.8532 0))
+    (property "Value" "PMOD4" (id 1) (at 94.615 123.1646 0))
     (property "Footprint" "gomaDOSzero:PMOD_Female_Horizontal_2" (id 2) (at 93.345 131.445 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3963,8 +3963,8 @@
   (symbol (lib_id "Connector_Generic:Conn_02x06_Top_Bottom") (at 93.345 171.45 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 974dc5f0-3500-4950-b40e-1dcd627496a2)
-    (property "Reference" "J4" (id 0) (at 94.615 160.8582 0))
-    (property "Value" "PMOD4" (id 1) (at 94.615 163.1696 0))
+    (property "Reference" "J3" (id 0) (at 94.615 160.8582 0))
+    (property "Value" "PMOD3" (id 1) (at 94.615 163.1696 0))
     (property "Footprint" "gomaDOSzero:PMOD_Female_Horizontal_2" (id 2) (at 93.345 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4501,10 +4501,10 @@
     (path "/16a60526-f496-457a-86e5-9ecf627b3ddc"
       (reference "J2") (unit 1) (value "PMOD2") (footprint "gomaDOSzero:Pmod_2x06_P2.54mm_Vertical_2")
     )
-    (path "/3e4369ed-61b9-4b9e-92f5-8943e3df62d1"
+    (path "/974dc5f0-3500-4950-b40e-1dcd627496a2"
       (reference "J3") (unit 1) (value "PMOD3") (footprint "gomaDOSzero:PMOD_Female_Horizontal_2")
     )
-    (path "/974dc5f0-3500-4950-b40e-1dcd627496a2"
+    (path "/3e4369ed-61b9-4b9e-92f5-8943e3df62d1"
       (reference "J4") (unit 1) (value "PMOD4") (footprint "gomaDOSzero:PMOD_Female_Horizontal_2")
     )
     (path "/c613c370-cd71-407d-b1be-966e5dc54ca7"
