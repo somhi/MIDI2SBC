@@ -81,13 +81,20 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon by [Antonio
 
 * DAC I2S 
   * Only one DAC (either UDA 1334A or PCM5102A) is intended to be used at the same time, although should be possible to run them simultaneously.
-  * DAC input voltage is selected by jumpers (from Edge, Raspberry Pi or other FPGA)
+  * DAC input voltage can be selected by jumpers from Edge, Raspberry Pi or other FPGA
+  * PCM5102A connector is compatible with a 6 pin Pmod if JP11 jumper is removed.
+
 * SPI communication between Raspberry Pi and FPGA
   * SPI 0 or SPI 1 is available (selection by jumpers JP4x)
+  * External FPGAs are to be connected to Pmod4 (SPI + UART)
+
 * mt32-pi synthesizer
   * Power supply: JP11 set to RPI and short JP12 with a jumper
   * DAC source from FPGA: SPI 1 should be selected when using mt32-pi (jumpers JP4x)
   * DAC source from RPi: No jumper or SPI 0 should be selected when using mt32-pi (jumpers JP4x)
+  * External FPGAs are to be connected to Pmod I2S (PCM5102A) and MIDI In (UART) or Pmod4 (SPI + UART) for mixing.
+
+  
 
 ### **Jumpers / Switches selection**
 
@@ -184,11 +191,11 @@ v0.72 silkscreen updated (midi and mt32pi settings)
 
 v1.00 silkscreen and documentation improved. Pmod3 and Pmod4 silkscreen labels exchanged. Rounded corners of outline. Pmod3/4 moved 0.4 mm outside.
 
-
+v1.01 silkscreen for pmod i2s (PCM5102A connector). Improved usage notes in readme.
 
 ### **Todo / Improvements**
 
-* Mechanical stability of i2S DACs and display could be improved
+* Mechanical stability of i2S DACs and display could be improved. -> Solution: bending a little bit the pins from the display and the DAC I2S they fix better to the board sockets and don't move.
 
   
 
