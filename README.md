@@ -79,11 +79,14 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon by [Antonio
 
 ### **Usage notes**
 
+* It is recommended to power supply first the FPGA and thereafter the MISI2SBC addon
+  
 * DAC I2S 
+  
   * Only one DAC (either UDA 1334A or PCM5102A) is intended to be used at the same time, although should be possible to run them simultaneously.
   * DAC input voltage can be selected by jumpers from Edge, Raspberry Pi or other FPGA
   * PCM5102A connector is compatible with a 6 pin Pmod if JP11 jumper is removed.
-
+  
 * SPI communication between Raspberry Pi and FPGA
   * SPI 0 or SPI 1 is available (selection by jumpers JP4x)
   * External FPGAs are to be connected to Pmod4 (SPI + UART)
@@ -192,6 +195,8 @@ v0.72 silkscreen updated (midi and mt32pi settings)
 v1.00 silkscreen and documentation improved. Pmod3 and Pmod4 silkscreen labels exchanged. Rounded corners of outline. Pmod3/4 moved 0.4 mm outside.
 
 v1.01 silkscreen for pmod i2s (PCM5102A connector). Improved usage notes in readme.
+
+v1.02 minor silkscreen changes, usage notes.
 
 ### **Todo / Improvements**
 
