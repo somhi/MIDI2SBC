@@ -195,6 +195,8 @@ v1.02 minor silkscreen changes, usage notes.
 
 v1.05 minor silkscreen changes
 
+v1.10 routed i2c pins to PMOD 4 to communicate Raspberry Pi and FPGA (e.g. MiSTer can control mt32-pi from OSD)
+
 ### **Todo / Improvements**
 
 * ADD i2c pins to communicate Raspberry Pi and FPGA (e.g. MiSTer can control mt32-pi from OSD)
