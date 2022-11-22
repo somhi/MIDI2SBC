@@ -1,6 +1,8 @@
 # MIDI I2S SBC Pmod Edge Interface
 
-**STATUS (24/03/22):** Finished most of testing satisfactorily. See log updates for minor changes from v0.7 to v1.0
+STATUS (22/11/22): See log updates for minor changes from v0.7 to v1.1
+
+STATUS (24/03/22): Finished most of testing satisfactorily. 
 
 STATUS (24/03/22): received pcbs (16/03/22) and started testing.  
 
@@ -31,6 +33,7 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon by [Antonio
   * Play MIDI sounds from FPGA core through an I2S DAC
   * It is possible to send mt32-pi I2S audio back to FPGA for mixing with other core audio and play it back through the I2S DAC
   * PCB includes footprints for an I2C OLED display, a rotative encoder and 2 buttons
+  * Control mt32-pi through i2c pins (e.g. from MiSTer's OSD)
   
 * DAC I2S: 
   
@@ -56,7 +59,7 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon by [Antonio
   * Pmod 1 is connected to I2C lines of NeptUNO base board
   * Includes a 5V power supply header between Pmods  for broader compatibility
 * PMODs 3 & 4  
-  * Can be used as host or peripheral pmods (jumper enables output power). 
+  * Can be used as host or peripheral pmods (jumper JP5 enables output power). 
   * Includes a 5V power supply pin between Pmods  for broader compatibility
   * Notes:
     * Double Pmod for peripherals is only possible if not using mt32-pi or multicore options
@@ -83,7 +86,7 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon by [Antonio
   * PCM5102A connector is compatible with a 6 pin Pmod if JP11 jumper is removed.
   
 * SPI communication between Raspberry Pi and FPGA
-  * SPI 0 or SPI 1 is available (selection by jumpers JP4x)
+  * SPI 0 or SPI 1 is available (selection by jumpers JP4x) 
   * External FPGAs are to be connected to Pmod4 (SPI + UART)
 
 * mt32-pi synthesizer
@@ -91,7 +94,8 @@ This design is based on the Eagle design of the RTC+I2S+PIzero Addon by [Antonio
   * DAC source from FPGA: SPI 1 should be selected when using mt32-pi (jumpers JP4x)
   * DAC source from RPi: No jumper or SPI 0 should be selected when using mt32-pi (jumpers JP4x)
   * External FPGAs are to be connected to Pmod I2S (PCM5102A) and MIDI In (UART) or Pmod4 (SPI + UART) for mixing.
-
+  * MiSTer OSD i2c control: short jumpers JP31, JP32 and remove jumpers from JP41, JP45.
+  
   
 
 ### **Jumpers / Switches selection**
@@ -121,12 +125,17 @@ The board has several jumpers for a broader usage with multiple configurations. 
     * JP21, JP22, JP23 jumper connected to the FPGA mark side
   * DAC I2S connected directly to the MIDI synthesizer (mt32-pi)
     * JP21, JP22, JP23   jumper connected to the RPI mark side
-  
+
+* SPI / I2C selection  (2 pin jumpers)
+
+  * SPI selection: JP31 and JP32 open.
+  * I2C selection: JP31 and JP32 closed (central pins of MOSI JP41 and CE1 JP45 are wired to the I2C bus connected to the mt32-pi (RPi). Jumpers JP41 and JP45 should be removed to avoid interferences.).
+
 * SPI selection: SPI0 or SPI1 (3 pin jumper)
 
   * SPI0: JP41, JP42, JP43, JP44, JP45  jumper connected to the SPI0 mark side
   * SPI1: JP41, JP42, JP43, JP44, JP45  jumper connected to the SPI1 mark side
-  
+
 * Power supply selection for pins 1 and 2 of the I2C OLED display
 
   * You might find in the marked I2C displays that need 3V3 on pin 1 and GND on pin 2 whereas others those pins are exchanged
@@ -139,7 +148,12 @@ The board has several jumpers for a broader usage with multiple configurations. 
 
     * Solder central pad to either 3V3 or GND for selecting function of PS2 display pin 2
 
-      
+* Power supply for PMOD3 & PMOD4 ( JP5 2 pin jumper )
+
+  * Use as Peripheral pmods: JP5 opened  (No voltage is supplied into VH pins)
+  * Use as Host pmods: JP5 closed (3V3 voltage from board is wired into VH pins)
+
+  
 
 ### Notes regarding NeptUNO base board
 
@@ -198,8 +212,6 @@ v1.05 minor silkscreen changes
 v1.10 routed i2c pins to PMOD 4 to communicate Raspberry Pi and FPGA (e.g. MiSTer can control mt32-pi from OSD)
 
 ### **Todo / Improvements**
-
-* ADD i2c pins to communicate Raspberry Pi and FPGA (e.g. MiSTer can control mt32-pi from OSD)
 
 * Mechanical stability of i2S DACs and display could be improved. -> Solution: bending a little bit the pins from the display and the DAC I2S so they fix better to the board sockets and don't move.
 
