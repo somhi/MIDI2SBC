@@ -1,15 +1,10 @@
 # MIDI I2S SBC Pmod Edge Interface
 
-**STATUS (01/03/22): **sent v0.70 to manufacturing at JLCPCB****
-
-**STATUS (24/03/22):** received pcbs (16/03/22) and started testing.  
-
 **STATUS (24/03/22):** Finished most of testing satisfactorily. See log updates for minor changes from v0.7 to v1.0
 
-**Testing to be done:**
+STATUS (24/03/22): received pcbs (16/03/22) and started testing.  
 
-* Test additional 5V power supply for double pmods
-* Test with a PCM5102A DAC
+STATUS (01/03/22): sent v0.70 to manufacturing at JLCPCB
 
 ### Intro
 
@@ -198,9 +193,12 @@ v1.01 silkscreen for pmod i2s (PCM5102A connector). Improved usage notes in read
 
 v1.02 minor silkscreen changes, usage notes.
 
+v1.05 minor silkscreen changes
+
 ### **Todo / Improvements**
 
-* Mechanical stability of i2S DACs and display could be improved. -> Solution: bending a little bit the pins from the display and the DAC I2S they fix better to the board sockets and don't move.
+* ADD i2c pins to communicate Raspberry Pi and FPGA (e.g. MiSTer can control mt32-pi from OSD)
+
+* Mechanical stability of i2S DACs and display could be improved. -> Solution: bending a little bit the pins from the display and the DAC I2S so they fix better to the board sockets and don't move.
 
   
-
