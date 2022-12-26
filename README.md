@@ -1,6 +1,6 @@
 # MIDI I2S SBC Pmod Edge Interface
 
-STATUS (22/11/22): See log updates for minor changes from v0.7 to v1.1
+STATUS (26/12/22): Finished gerber files for v1.10. See changelog for updates from v0.7 to v1.1
 
 STATUS (24/03/22): Finished most of testing satisfactorily. 
 
@@ -129,7 +129,7 @@ The board has several jumpers for a broader usage with multiple configurations. 
 * SPI / I2C selection  (2 pin jumpers)
 
   * SPI selection: JP31 and JP32 open.
-  * I2C selection: JP31 and JP32 closed (central pins of MOSI JP41 and CE1 JP45 are wired to the I2C bus connected to the mt32-pi (RPi). Jumpers JP41 and JP45 should be removed to avoid interferences.).
+  * I2C selection: JP31 and JP32 closed (central pins of MOSI JP41 and CE1 JP45 are wired to the I2C bus connected to the mt32-pi (RPi). Jumpers JP41 and JP45 should be removed to avoid interferences).
 
 * SPI selection: SPI0 or SPI1 (3 pin jumper)
 
@@ -178,7 +178,7 @@ A simple way to solve this is to remove pins 12 and 15 with a plier from the VGA
 
   
 
-* B24 Edge pin is connected in NeptUNO board internally to the Joy Select signal by means of a solder pad which by default is not soldered. To get this signal in the addon it is required to solder the two pads of the left as seen in the following pictgure.
+* B24 Edge pin is connected in NeptUNO board internally to the Joy Select signal by means of a solder pad which by default is not soldered. To get this signal in the addon it is required to solder the two pads of the left as seen in the following picture.
 
   Please notice that it is better not to use the Joy Select pin if you intend the use also pin 7 on DB9 connectors of NeptUNO board for the joy select function of Sega megadrive joysticks.
   
@@ -214,5 +214,7 @@ v1.10 routed i2c pins to PMOD 4 to communicate Raspberry Pi and FPGA (e.g. MiSTe
 ### **Todo / Improvements**
 
 * Mechanical stability of i2S DACs and display could be improved. -> Solution: bending a little bit the pins from the display and the DAC I2S so they fix better to the board sockets and don't move.
+
+* Add in the same PCB a breokout board for converting PMO4 to USB3 for MiSTer connection
 
   

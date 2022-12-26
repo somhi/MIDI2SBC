@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "6.0.0-d3dd2cf0fa~116~ubuntu20.04.1"
+      "Version": "6.0.9-8da3e8f707~117~ubuntu20.04.1"
     },
-    "CreationDate": "2022-03-24T22:15:27+01:00"
+    "CreationDate": "2022-12-26T13:00:26+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "addon-edge-rpi-i2s-pmod",
       "GUID": "6164646f-6e2d-4656-9467-652d7270692d",
-      "Revision": "${VERSION}"
+      "Revision": "1.10"
     },
     "Size": {
       "X": 100.025,
